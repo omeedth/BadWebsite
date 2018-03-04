@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+
+    <head>
+    
+        <title></title>
+        <meta name="author" content="Alex Thomas">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <link type="text/css" rel="stylesheet" href="stylesheets.css">
+        
+    </head>
+    
+    <body>
+    
+        <div id="wrapper">
+        
+            <div id="content">
+            
+                <!-- Navagation Bar -->
+                
+                <div id="navbar">
+                
+                    <ul id="nav_links">
+                    
+                        <li class="nav_link"><a href="#">Home</a></li>
+                        <li class="nav_link"><a href="#">About Me</a></li>
+                        <li class="nav_link"><a href="#">Projects</a></li>
+                        <li class="nav_link"><a href="#">Contact</a></li>
+                    
+                    </ul>
+                
+                </div>
+                
+                <!-- Jumbotron -->
+                
+                <div id="jumbotron">
+                
+                    <div id="me">
+                        <img id="my_picture" src"">
+                    </div>
+                    
+                    <div id="jumbo_content">
+                        
+                        <h1>Alex Thomas</h1>
+                        <p>Computer Scientist and Anime Enthusiast</p>
+                        
+                    </div>
+                
+                </div>
+                
+                <!-- transition -->
+                
+                <div id="transition1">
+                
+                </div>
+                
+                <!-- About Me -->
+                
+                <div id="aboutme">
+                
+                    <div id="about_left">
+                        
+                        <input id="myRange" class="slider" type="range" min="1" max="3" steps="1" value="3" orient="vertical"/>
+                        <!-- <p>value <span id="val"></span></p> -->
+                        
+                        <div id="about_me_vals">
+                            
+                            <img class="activeimg about_me_val" src="res/user.png">
+                            <img class="about_me_val" src="res/skills.png">
+                            <img class="about_me_val" src="res/experience.png">
+                            
+                            <!--
+                            <h1>Me</h1>
+                            <h1>Skills</h1>
+                            <h1>Experience</h1>
+                            -->         
+                        
+                        </div>
+                        
+                    </div>
+                    
+                    <div id="about_right">
+                    
+                        <div id="abt_me" class="slide activeslide">
+                        
+                            <h1>About Me</h1>
+                            
+                            <br>
+                            
+                            <p>&emsp;My name is Alex Thomas, and I am a passionate Computer Scientist! This passion began early middle school when I had this optomistic idea of making a game. I was excited to begin creating something that many people could use and have fun with. I ended up trying to make a game in Java without ANY experience coding. Needless to say, it was a huge flop. But,  from that day on I knew I wanted to get better and pursue Computer Science.</p>
+                            
+                            <br>
+                            
+                            <p>&emsp;My focus now for Computer Science is Machine Learning and Cyber Security! I am mesmerised by these new genius algorithms that respond to data live and fixes itself. This new dynamic way of coding feels so alive and is super interesting. And as for Cyber Security, it is so relevant and useful. I like the feeling of making code that serves to protect us and our information!</p>
+                            
+                        </div>
+                        
+                        <div id="skills" class="slide">
+                        
+                            <h1>Skills</h1>
+                            
+                            <br>
+                            
+                            <input id="Java" class="skill" type="range" min="0" max="100" steps="1" value="80" disabled/>
+                            
+                        </div>
+                        
+                        <div id="exp" class="slide">
+                        
+                            <h1>Experience</h1>
+                            
+                        </div>
+                    
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <script style="visibility: hidden">
+        
+            var slider = document.getElementById("myRange");
+            //var output = document.getElementById("val");
+            //output.innerHTML = slider.value; // Display the default slider value
+            
+            // Update the current slider value (each time you drag the slider handle)
+            slider.oninput = function() {
+                
+                var val = this.value;
+                
+                //output.innerHTML = val;
+                
+                var imgs = document.getElementsByClassName("about_me_val"); 
+                var active = document.getElementsByClassName("activeimg");
+                
+                active[0].classList.remove("activeimg");               
+                imgs[3 - val].classList.add("activeimg");
+                
+                var slides = document.getElementsByClassName("slide");
+                var active = document.getElementsByClassName("activeslide");
+                
+                active[0].classList.remove("activeslide");
+                slides[3-val].classList.add("activeslide");
+                
+            }
+        
+        </script>
+        
+    </body>
+    
+</html>
