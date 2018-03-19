@@ -13,7 +13,7 @@
     </head>
     
     <body>
-    
+        
         <div id="wrapper">
         
             <div id="content">
@@ -38,7 +38,7 @@
                 <div id="jumbotron">
                 
                     <div id="me">
-                        <img id="my_picture" src"">
+                        <img src="res/headshot_crop.png" alt="Me">
                     </div>
                     
                     <div id="jumbo_content">
@@ -62,14 +62,15 @@
                 
                     <div id="about_left">
                         
+                        
                         <input id="myRange" class="slider" type="range" min="1" max="3" steps="1" value="3" orient="vertical"/>
                         <!-- <p>value <span id="val"></span></p> -->
 
                         <div id="about_me_vals">
                             
-                            <img class="activeimg about_me_val" src="res/user.png">
-                            <img class="about_me_val" src="res/skills.png">
-                            <img class="about_me_val" src="res/experience.png">
+                            <img class="activeimg about_me_val" value="1" src="res/user.png" onclick="func1()">
+                            <img class="about_me_val" value="2" src="res/skills.png" onclick="func2()">
+                            <img class="about_me_val" value="3" src="res/experience.png" onclick="func3()">
                             
                             <!--
                             <h1>Me</h1>
@@ -265,10 +266,10 @@
 
                                     <h2>(858) 382-5031</h2>
                                     <h2>aothomas@bu.edu</h2>
-                                    <h2>Github</h2>
-                                    <h2>Piazza</h2>
-                                    <h2>LinkedIn</h2>
-                                    <h2>Handshake</h2>
+                                    <h2>omeedth</h2>
+                                    <h2>Alex Thomas</h2>
+                                    <h2>Alex Thomas</h2>
+                                    <h2>Alex Thomas</h2>
                                     <h2>Indeed</h2>
 
                                 </div>
@@ -295,6 +296,54 @@
         
         <script style="visibility: hidden">
         
+            function func1() {
+                
+                var imgs = document.getElementsByClassName("about_me_val"); 
+                var active = document.getElementsByClassName("activeimg");
+                
+                active[0].classList.remove("activeimg");               
+                imgs[0].classList.add("activeimg");
+                
+                var slides = document.getElementsByClassName("slide");
+                var active = document.getElementsByClassName("activeslide");
+                
+                active[0].classList.remove("activeslide");
+                slides[0].classList.add("activeslide");
+                
+            }
+            
+            function func2() {
+                
+                var imgs = document.getElementsByClassName("about_me_val"); 
+                var active = document.getElementsByClassName("activeimg");
+                
+                active[0].classList.remove("activeimg");               
+                imgs[1].classList.add("activeimg");
+                
+                var slides = document.getElementsByClassName("slide");
+                var active = document.getElementsByClassName("activeslide");
+                
+                active[0].classList.remove("activeslide");
+                slides[1].classList.add("activeslide");
+                
+            }
+            
+            function func3() {
+                
+                var imgs = document.getElementsByClassName("about_me_val"); 
+                var active = document.getElementsByClassName("activeimg");
+                
+                active[0].classList.remove("activeimg");               
+                imgs[2].classList.add("activeimg");
+                
+                var slides = document.getElementsByClassName("slide");
+                var active = document.getElementsByClassName("activeslide");
+                
+                active[0].classList.remove("activeslide");
+                slides[2].classList.add("activeslide");
+                
+            }
+            
             var slider = document.getElementById("myRange");
             //var output = document.getElementById("val");
             //output.innerHTML = slider.value; // Display the default slider value
@@ -317,7 +366,7 @@
                 
                 active[0].classList.remove("activeslide");
                 slides[3-val].classList.add("activeslide");
-                
+            
                 /*
                 var val = this.value;
                 var index = Math.floor(val / 50);
@@ -339,10 +388,9 @@
                 
             }
             
-            
             var slideIndex = 1;
             showDivs(slideIndex);
-
+            
             function plusDivs(n) {
               showDivs(slideIndex += n);
             }
