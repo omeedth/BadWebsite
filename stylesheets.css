@@ -13,6 +13,16 @@ html {
     background: #f1f1f1;
 }
 
+/* --------------------- FireWorks ------------------------ */
+
+
+
+/* ------------------------- Website ---------------------------- */
+
+#myRange {
+    display: none;
+}
+
 #navbar #nav_links .nav_link {
     border-radius: 15px;
     border: 1px solid black;
@@ -31,8 +41,22 @@ html {
     padding: 0px;
 }
 
+#jumbotron #me {
+    width: 200px;
+    height: 225px;
+    border-radius: 100%;
+    box-shadow: 2px 2px 8px 1px #888888;
+    margin: 45px auto;
+}
+
 #jumbotron #me img{
     padding: 2px;    
+}
+
+#me img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
 }
 
 #transition1 {
@@ -51,9 +75,7 @@ html {
 #about_me_vals {
     width: 160px;
     height: 500px;
-    display: inline-block;
-    margin: 25px 25px 25px 0;
-    float: right;
+    margin: 25px 0 25px 0;
     text-align: center;
 }
 
@@ -61,6 +83,10 @@ html {
     width: 75px;
     height: 75px;
     margin: auto;
+}
+
+.about_me_val:hover {
+    box-shadow: 2px 2px 8px 1px #888888;
 }
 
 #about_right {
@@ -264,6 +290,8 @@ html {
     background-color: #f1f1f1;
 }
 
+/* Projects */
+
 #projects {
     width: 100%;
     height: 525px;
@@ -274,11 +302,11 @@ html {
     box-shadow: 2px 2px 8px 1px #888888;
     margin-bottom: 200px;
     padding-top: 25px;
+    overflow: hidden;
 }
 
 .project {
     position: relative;
-    visibility: visible;
     width: 95%;
     margin: auto;
     height: 425px;
@@ -286,6 +314,7 @@ html {
     padding-left: 5px;
     padding-right: 5px;
     box-shadow: 2px 2px 8px 1px #888888;
+    
 }
 
 .project p {
@@ -411,11 +440,11 @@ html {
     }
     
     #jumbotron #me {
-        width: 200px;
-        height: 200px;
+        width: 270px;
+        height: 300px;
         border-radius: 100%;
         box-shadow: 2px 2px 8px 1px #888888;
-        margin: 55px auto;
+        margin: 35px auto;
     }
     
     #jumbotron #jumbo_content {
@@ -446,13 +475,13 @@ html {
     
     #aboutme #about_left {
         display: inline-block;
-        width: 360px;
+        width: 160px;
         height: 550px;
         margin: 25px;
         float: left;
         box-shadow: 2px 2px 8px 1px #888888;
     }
-    
+
     #aboutme #about_left input {
         margin: 25px 75px;
     }
@@ -466,7 +495,30 @@ html {
         display: inline-block;
     }
     
-    
+    .slider::-webkit-slider-thumb {
+      -webkit-appearance: slider-vertical;
+        border: none;
+        height: 50px;
+        width: 50px;
+    }
+
+    .slider::-moz-range-thumb {
+      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+      border: 1px solid #000000;
+      height: 75px;
+      width: 75px;
+      background: #ffffff;
+      cursor: pointer;
+    }
+
+    .slider::-ms-thumb {
+      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+      border: 1px solid #000000;
+      height: 75px;
+      width: 75px;
+      background: #ffffff;
+      cursor: pointer;
+    }
     
     #about_me_vals .about_me_val:not(:last-child) {
         margin-bottom: 140px;
@@ -563,8 +615,8 @@ html {
     }
     
     #jumbotron #me {
-        width: 200px;
-        height: 200px;
+        width: 225px;
+        height: 250px;
         border-radius: 100%;
         box-shadow: 2px 2px 8px 1px #888888;
         margin: 40px auto;
@@ -589,7 +641,7 @@ html {
     
     #aboutme #about_left {
         display: inline-block;
-        max-width: 360px;
+        max-width: 160px;
         height: 550px;
         margin: 25px;
         float: left;
@@ -708,6 +760,7 @@ html {
         z-index: 10;
     }
     
+    /*
     #jumbotron #me {
         width: 200px;
         height: 200px;
@@ -715,6 +768,7 @@ html {
         box-shadow: 2px 2px 8px 1px #888888;
         margin: 25px auto;
     }
+    */
     
     #jumbotron #jumbo_content {
         width: 305px;
@@ -746,6 +800,7 @@ html {
         position: relative;
         padding-top: 25px;
         z-index: 10;
+        font-size: 21.5px;
     }
     
     #about_left {
@@ -769,16 +824,17 @@ html {
     }
     
     #about_me_vals {
-        width: 160px;
+        width: 90%;
         height: 200px;
-        display: inline-block;
-        margin: 0px 25px 25px 0;
-        float: right;
+        margin: auto;
     }
     
     .about_me_val {
-        width: 60px;
-        height: 60px;
+        width: 28%;
+        height: 69%;
+        margin: 25px 10px 0px 10px;
+        display: inline-block;
+        float: left;
     }
     
     #about_me_vals .about_me_val:not(:last-child) {
@@ -787,7 +843,7 @@ html {
     
     #about_right {
         width: 100%;
-        height: 700px;
+        height: 700px; /*700px*/
         margin: 25px 0 0 0;
         background-color: white;
         float: right;
@@ -798,7 +854,7 @@ html {
     
     .activeslide {
         width: 80%;
-        height: 600px;
+        height: auto;
         background-color: white;
         margin: 25px auto;
         box-shadow: 2px 2px 8px 1px #888888;
@@ -815,6 +871,11 @@ html {
         margin: 10px 0 0 5px;
         text-align: center;
     }
+    
+    #contact {
+        height: 400px;
+    }
+
     
     #contact_info {
         width: 90%;
@@ -840,24 +901,40 @@ html {
         
         #contact_info {
             padding: 0px;
-            width: 300px;
+            width: 233px;
             margin: auto;
-            overflow: visible;
+            overflow: hidden;
         }
         
         #left_contact {
-            position: absolute;
-            width: 50%; 
+            /*position: absolute;*/
+            width: 130px; 
+            padding-bottom: 5px;
             border-bottom: 1px solid black;
         }
         
         #right_contact {
-            position: absolute;
+            /*position: absolute;*/
             display: block;
-            width: 100%;
+            width: 205px;
+            margin: 0px;
             padding: 0;
-            margin-top: 200px;
+            /*margin-top: 210px;*/
             
+        }
+        
+        #aboutme {
+            font-size: 18px;
+        }
+        
+        .about_me_val:first-child {
+            margin-left: 20px;
+        }
+        
+        .about_me_val {
+            width: 25%;
+            height: 55%;
+            margin: 35px 10px 0px 10px;
         }
         
     }
@@ -897,9 +974,29 @@ html {
         .skill {
             width: 100%;
         }
-           
+        
+        #aboutme {
+            font-size: 18px;
+        }
+        
+        #about_me_vals {
+            width: 220px;
+            padding: 0px;
+            margin: 0 auto 0 auto;
+        }
+        
+        .about_me_val:first-child {
+            margin: 70px 5px 0px 5px;
+        }
+        
+        .about_me_val {
+            width: 60px;
+            height: 60px;
+            margin: 70px 5px 0px 5px;
+        }
+        
     }
-    
+  
 }
 
 
