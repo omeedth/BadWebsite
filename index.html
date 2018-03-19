@@ -1,0 +1,413 @@
+<!doctype html>
+<html>
+
+    <head>
+    
+        <title></title>
+        <meta name="author" content="Alex Thomas">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <link type="text/css" rel="stylesheet" href="stylesheets.css">
+        
+    </head>
+    
+    <body>
+        
+        <div id="wrapper">
+        
+            <div id="content">
+            
+                <!-- Navagation Bar -->
+                
+                <div id="navbar">
+                
+                    <ul id="nav_links">
+                    
+                        <li class="nav_link"><a href="#" onclick="effect">Home</a></li>
+                        <li class="nav_link"><a href="#aboutme">About Me</a></li>
+                        <li class="nav_link"><a href="#projects">Projects</a></li>
+                        <li class="nav_link"><a href="#contact">Contact</a></li>
+                    
+                    </ul>
+                
+                </div>
+                
+                <!-- Jumbotron -->
+                
+                <div id="jumbotron">
+                
+                    <div id="me">
+                        <img src="res/headshot_crop.png" alt="Me">
+                    </div>
+                    
+                    <div id="jumbo_content">
+                        
+                        <h1>Alex Thomas</h1>
+                        <p>Computer Scientist and Anime Enthusiast</p>
+                        
+                    </div>
+                
+                </div>
+                
+                <!-- transition -->
+                
+                <div id="transition1">
+                
+                </div>
+                
+                <!-- About Me -->
+                
+                <div id="aboutme">
+                
+                    <div id="about_left">
+                        
+                        
+                        <input id="myRange" class="slider" type="range" min="1" max="3" steps="1" value="3" orient="vertical"/>
+                        <!-- <p>value <span id="val"></span></p> -->
+
+                        <div id="about_me_vals">
+                            
+                            <img class="activeimg about_me_val" value="1" src="res/user.png" onclick="func1()">
+                            <img class="about_me_val" value="2" src="res/skills.png" onclick="func2()">
+                            <img class="about_me_val" value="3" src="res/experience.png" onclick="func3()">
+                            
+                            <!--
+                            <h1>Me</h1>
+                            <h1>Skills</h1>
+                            <h1>Experience</h1>
+                            -->         
+                        
+                        </div>
+                        
+                    </div>
+                    
+                    <div id="about_right">
+                    
+                        <div id="abt_me" class="slide activeslide">
+                        
+                            <h1>About Me</h1>
+                            
+                            <br>
+                            
+                            <p>&emsp;My name is Alex Thomas, and I am a passionate Computer Scientist! This passion began early middle school when I had this optomistic idea of making a game. I was excited to begin creating something that many people could use and have fun with. I ended up trying to make a game in Java without ANY experience coding. Needless to say, it was a huge flop. But,  from that day on I knew I wanted to get better and pursue Computer Science.</p>
+                            
+                            <br>
+                            
+                            <p>&emsp;My focus now for Computer Science is Machine Learning and Cyber Security! I am mesmerised by these new genius algorithms that respond to data live and fixes itself. This new dynamic way of coding feels so alive and is super interesting. And as for Cyber Security, it is so relevant and useful. I like the feeling of making code that serves to protect us and our information!</p>
+                            
+                        </div>
+                        
+                        <div id="skills" class="slide">
+                        
+                            <h1>Skills</h1>
+                            
+                            <br>
+                            
+                            <div id="skill_wrapper">
+                            
+                                <div class="skill_container">
+
+                                    <div class="skillset">
+                                        <input id="Java" class="skill" type="range" min="0" max="100" steps="1" value="80" disabled/>
+                                        <h2>80%</h2>
+                                    </div>
+
+                                    <h1 class="skill_name">Java</h1>
+
+                                </div>
+
+                                <div class="skill_container">
+
+                                    <div class="skillset">
+                                        <input id="C" class="skill" type="range" min="0" max="100" steps="1" value="70" disabled/>
+                                        <h2>70%</h2>
+                                    </div>
+
+                                    <h1 class="skill_name">C</h1>
+
+                                </div>
+
+                                <div class="skill_container">
+
+                                    <div class="skillset">
+                                        <input id="Python" class="skill" type="range" min="0" max="100" steps="1" value="80" disabled/>
+                                        <h2>80%</h2>
+                                    </div>
+
+                                    <h1 class="skill_name">Python</h1>
+
+                                </div>
+
+                                <div class="skill_container">
+
+                                    <div class="skillset">
+                                        <input id="Javascript" class="skill" type="range" min="0" max="100" steps="1" value="50" disabled/>
+                                        <h2>50%</h2>
+                                    </div>
+
+                                    <h1 class="skill_name">Javascipt</h1>
+
+                                </div>
+
+                                <div class="skill_container">
+
+                                    <div class="skillset">
+                                        <input id="HTML5" class="skill" type="range" min="0" max="100" steps="1" value="90" disabled/>
+                                        <h2>90%</h2>
+                                    </div>
+
+                                    <h1 class="skill_name">HTML5</h1>
+
+                                </div>
+
+                                <div class="skill_container">
+
+                                    <div class="skillset">
+                                        <input id="CSS" class="skill" type="range" min="0" max="100" steps="1" value="80" disabled/>
+                                        <h2>80%</h2>
+                                    </div>
+
+                                    <h1 class="skill_name">CSS</h1>
+
+                                </div>
+                            
+                            </div>
+                                
+                        </div>
+                        
+                        <div id="exp" class="slide">
+                        
+                            <h1>Experience</h1>
+                            
+                            <br>
+                            
+                            <ul id="experiences">
+                            
+                                <li>Boston University IT (2017 - Present)</li>
+                                <li>Hoping to gain more experience with internships!</li>
+                                
+                            </ul>
+                            
+                        </div>
+                    
+                    </div>
+                    
+                    <!-- transition -->
+                
+                    <div id="transition2">
+
+                    </div>
+                    
+                    <!-- Projects -->
+                    
+                    <div id="projects">
+                          
+                        <div class="project">
+                        
+                            <h2>Java</h2>
+                            
+                            <p>I made a game entirely in Java from scratch. I made the engine myself </p>
+                            
+                        </div>
+                        
+                        <div class="project">
+                        
+                            <h2>Python</h2>
+                            
+                            <p>I made a python scripts using Selenium and BeautifulSoup so that it could register for classes for me and take quizzes for me on Blackboard </p>
+                            
+                        </div>
+                        
+                        <div class="project">
+                        
+                            <h2>HTML/CSS/Javascript</h2>
+                            
+                            <p>I made a couple websites besides this one. I always make my websites with just HTML5, CSS3 and Javascript. I don't use any premade libraries so that I can practice my skills better. I was the creator and president of my schools Web Development Club.</p>
+                            
+                        </div>
+
+                        <div class="project">
+                        
+                            <h2>C</h2>
+                            
+                            <p>I am a part of Boston University Rocket Propulsion Group and I had to learn C so that I can program the microcontrollers we use. I was a part of the Telemetry group which had me use C to take data from the logging team and convert it into pin outputs on the AVR Board (AT32uc3a3256). Once I do that I send the data over to the Feather Board so that the feather board can send the data to us on the ground!</p>
+                            
+                        </div>
+                        
+                        <button id="btnleft" onclick="plusDivs(-1)">&#10094;</button>
+                        <button id="btnright" onclick="plusDivs(1)">&#10095;</button>
+                        
+                    </div>
+                    
+                    <!-- Contact Me -->
+                    
+                    <div id="contact">
+                    
+                        <div id="my_contact">
+                        
+                            <h1>Contact Info</h1>
+                            
+                            <div id="contact_info">
+                                
+                                <div id="left_contact">
+
+                                    <h2>Phone:</h2>
+                                    <h2>Email:</h2>
+                                    <h2>Github:</h2>
+                                    <h2>Piazza:</h2>
+                                    <h2>LinkedIn:</h2>
+                                    <h2>Handshake:</h2>
+                                    <h2>Indeed:</h2>
+
+                                </div>
+
+                                <div id="right_contact">
+
+                                    <h2>(858) 382-5031</h2>
+                                    <h2>aothomas@bu.edu</h2>
+                                    <h2>omeedth</h2>
+                                    <h2>Alex Thomas</h2>
+                                    <h2>Alex Thomas</h2>
+                                    <h2>Alex Thomas</h2>
+                                    <h2>Indeed</h2>
+
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    <!-- Resume Download -->
+                    
+                    <div id="resume">
+                    
+                    
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <script style="visibility: hidden">
+        
+            function func1() {
+                
+                var imgs = document.getElementsByClassName("about_me_val"); 
+                var active = document.getElementsByClassName("activeimg");
+                
+                active[0].classList.remove("activeimg");               
+                imgs[0].classList.add("activeimg");
+                
+                var slides = document.getElementsByClassName("slide");
+                var active = document.getElementsByClassName("activeslide");
+                
+                active[0].classList.remove("activeslide");
+                slides[0].classList.add("activeslide");
+                
+            }
+            
+            function func2() {
+                
+                var imgs = document.getElementsByClassName("about_me_val"); 
+                var active = document.getElementsByClassName("activeimg");
+                
+                active[0].classList.remove("activeimg");               
+                imgs[1].classList.add("activeimg");
+                
+                var slides = document.getElementsByClassName("slide");
+                var active = document.getElementsByClassName("activeslide");
+                
+                active[0].classList.remove("activeslide");
+                slides[1].classList.add("activeslide");
+                
+            }
+            
+            function func3() {
+                
+                var imgs = document.getElementsByClassName("about_me_val"); 
+                var active = document.getElementsByClassName("activeimg");
+                
+                active[0].classList.remove("activeimg");               
+                imgs[2].classList.add("activeimg");
+                
+                var slides = document.getElementsByClassName("slide");
+                var active = document.getElementsByClassName("activeslide");
+                
+                active[0].classList.remove("activeslide");
+                slides[2].classList.add("activeslide");
+                
+            }
+            
+            var slider = document.getElementById("myRange");
+            //var output = document.getElementById("val");
+            //output.innerHTML = slider.value; // Display the default slider value
+            
+            // Update the current slider value (each time you drag the slider handle)
+            slider.oninput = function() {
+                
+                var val = this.value;
+                
+                //output.innerHTML = val;
+                
+                var imgs = document.getElementsByClassName("about_me_val"); 
+                var active = document.getElementsByClassName("activeimg");
+                
+                active[0].classList.remove("activeimg");               
+                imgs[3 - val].classList.add("activeimg");
+                
+                var slides = document.getElementsByClassName("slide");
+                var active = document.getElementsByClassName("activeslide");
+                
+                active[0].classList.remove("activeslide");
+                slides[3-val].classList.add("activeslide");
+            
+                /*
+                var val = this.value;
+                var index = Math.floor(val / 50);
+                
+                //output.innerHTML = index;
+                
+                var imgs = document.getElementsByClassName("about_me_val"); 
+                //var active = document.getElementsByClassName("activeimg");
+                
+                active[0].classList.remove("activeimg");               
+                imgs[index].classList.add("activeimg");
+                
+                var slides = document.getElementsByClassName("slide");
+                var active = document.getElementsByClassName("activeslide");
+                
+                active[0].classList.remove("activeslide");
+                slides[index].classList.add("activeslide");
+                */
+                
+            }
+            
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("project");
+              if (n > x.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            
+        </script>
+        
+    </body>
+    
+</html>
